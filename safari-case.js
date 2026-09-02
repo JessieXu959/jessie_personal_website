@@ -1,0 +1,1 @@
+const progress=document.querySelector('.progress span');function paintProgress(){const max=document.documentElement.scrollHeight-innerHeight;progress.style.width=`${max?(scrollY/max)*100:0}%`}addEventListener('scroll',paintProgress,{passive:true});paintProgress();
