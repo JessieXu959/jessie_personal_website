@@ -41,3 +41,29 @@ body{background:#07070d}.research-section{max-width:none;background:linear-gradi
 .education-only{padding-top:54px!important}
 
 @media(max-width:700px){.path-story{scroll-margin-top:96px}.experience-feature--text>.experience-meta{grid-template-columns:1fr;padding:20px}.experience-feature--text>.experience-meta p{grid-column:auto}.experience-feature--text .experience-panel{margin:0 20px;padding-bottom:22px}.experience-feature--text .experience-impact{margin:24px 0}.experience-feature--text .experience-impact div{padding:14px 0}.experience-highlights{gap:17px;flex-wrap:wrap}.experience-highlights div{gap:6px}.education-only{padding-top:48px!important}}
+
+/* Safari 封面图自适应修正 */
+.bento-card.cover-card {
+  padding: 0 !important;
+  position: relative !important;
+  overflow: hidden !important;
+  background: #f7a93b !important;
+  display: block !important;
+}
+
+.bento-card.cover-card > img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  position: absolute !important;
+  inset: 0 !important;
+  display: block !important;
+}
+
+.bento-card.cover-card > div:last-child {
+  position: absolute !important;
+  left: 20px !important;
+  bottom: 20px !important;
+  z-index: 5 !important;
+}
