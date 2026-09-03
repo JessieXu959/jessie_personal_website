@@ -67,5 +67,132 @@ body{background:#07070d}.research-section{max-width:none;background:linear-gradi
   }
 }
 
+isplay: block;
+}
 
+/* =========================================
+   项目卡片小胶囊标签样式 (Unity 2D, C# 等)
+   ========================================= */
+.project-card-tags {
+  display: flex !important;
+  gap: 8px !important;
+  flex-wrap: wrap !important;
+  margin: 16px 0 18px !important;
+}
 
+.project-card-tags small {
+  display: inline-block !important;
+  border: 1px solid rgba(207, 172, 255, 0.3) !important;
+  border-radius: 999px !important;
+  padding: 4px 10px !important;
+  font: 10px 'DM Mono', monospace !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase !important;
+  color: #d7b5ff !important;
+  background: rgba(155, 108, 255, 0.08) !important;
+}
+
+.hero-tagline {
+  font-size: clamp(18px, 2.2vw, 24px) !important;
+  color: #e5daf8 !important;
+  margin: 18px 0 24px !important;
+  letter-spacing: -0.02em;
+}
+
+.hero-tagline em {
+  font-family: Georgia, serif;
+  font-style: italic;
+  color: var(--pink);
+}
+
+/* 3 列微光卡片布局，取代原本拥挤的大段灰字 */
+.hero-pills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 20px 0 24px;
+  max-width: 620px;
+}
+
+.hero-pills-grid > div {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(196, 164, 255, 0.16);
+  border-radius: 12px;
+  padding: 12px 14px;
+  backdrop-filter: blur(8px);
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-pills-grid > div:hover {
+  border-color: rgba(207, 172, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+.hero-pills-grid span {
+  display: block;
+  font: 9px 'DM Mono', monospace;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #c4a4ff;
+  margin-bottom: 6px;
+}
+
+.hero-pills-grid p {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #b8b2c5;
+  margin: 0;
+}
+
+.hero-pills-grid p b {
+  color: #fff;
+  font-weight: 500;
+}
+
+/* 结尾口号 */
+.hero-motto {
+  font: 11px 'DM Mono', monospace !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  color: var(--pink) !important;
+  margin: 0 !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hero-motto:before {
+  content: '✦';
+  font-size: 10px;
+}
+
+/* 移动端自适应 */
+@media (max-width: 700px) {
+  .hero-pills-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
+
+.hero.section {
+  padding-bottom: 40px !important;
+}
+
+/* 2. 缩减国旗路线胶囊的上下间距 */
+.route {
+  margin-top: 24px !important;
+  margin-bottom: 0 !important;
+}
+
+/* 3. 缩减 01 / My Path 的顶部内边距 */
+.path-section {
+  padding-top: 30px !important;
+}
+
+.path-section .section-label {
+  margin-top: 0 !important;
+}
+
+.path-intro {
+  margin-top: 20px !important;
+}
